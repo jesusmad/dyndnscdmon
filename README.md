@@ -5,11 +5,15 @@ Simple Java program to send a GET request to the cdmon Dynamic DNS update API
 Java
 
 # Installing
-Compile Java .class file and configure a cron job
+Compile the .java file and configure a cron job
 
-Cron job example, run the program every minute
-```
+To add a new cron job: 
+
 crontab -e 
+
+Cron job example, it runs the program every minute
+```
 MAILTO=""
 * * * * * cd /path/to/class && java DynIP
 ```
+MAILTO="" -> no mail will be sent
